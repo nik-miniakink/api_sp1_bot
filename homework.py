@@ -11,7 +11,7 @@ PRACTICUM_TOKEN = os.getenv("PRACTICUM_TOKEN")
 TELEGRAM_TOKEN = os.getenv('TELEGRAM_TOKEN')
 CHAT_ID = os.getenv('TELEGRAM_CHAT_ID')
 url = 'https://praktikum.yandex.ru/api/user_api/homework_statuses/'
-proxy_url = 'socks5://72.49.49.11:31034'
+proxy_url = os.getenv("PROXY")
 
 
 def parse_homework_status(homework):
